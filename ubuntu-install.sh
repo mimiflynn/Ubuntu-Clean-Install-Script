@@ -40,6 +40,16 @@ sudo pear upgrade
 sudo pear channel-discover pear.drush.org
 sudo pear install drush/drush
 sudo drush
+sudo add-apt-repository ppa:myunity/ppa
+sudo apt-get update
+sudo apt-get install myunity
+echo "#-----------------------------------------------------------------------#"
+echo "Mactel Support PPA"
+echo "#-----------------------------------------------------------------------#"
+sudo add-apt-repository ppa:mactel-support/ppa
+sudo add-apt-repository ppa:yannubuntu/boot-repair
+sudo apt-get update
+sudo apt-get install -y boot-repair
 echo "#-----------------------------------------------------------------------#"
 echo "configure vim"
 echo "#-----------------------------------------------------------------------#"
