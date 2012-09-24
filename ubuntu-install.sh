@@ -55,7 +55,7 @@ echo "configure vim"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install build-essential vim vim-gnome ruby ruby-dev
 cd ~/
-git clone ~/Dropbox/git/ubuntu-vim.git/ .vim
+git clone git://github.com/mimiflynn/Ubuntu-.vim-for-development.git .vim
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 cd .vim
