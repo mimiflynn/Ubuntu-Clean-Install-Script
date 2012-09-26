@@ -49,7 +49,7 @@ sudo add-apt-repository ppa:indicator-multiload/stable-daily
 sudo add-apt-repository ppa:atareao/atareao
 sudo add-apt-repository ppa:skype-wrapper/ppa
 sudo apt-get update
-sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper
+sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper ubuntu-restricted-extras
 echo "#-----------------------------------------------------------------------#"
 echo "Mactel Support PPA"
 echo "#-----------------------------------------------------------------------#"
