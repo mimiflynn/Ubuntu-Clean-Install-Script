@@ -101,7 +101,7 @@ sudo apt-get install git-ftp
 echo "#-----------------------------------------------------------------------#"
 echo "office and graphics suites"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install libreoffice gimp inkscape
+ sudo apt-get -y --force-yes install libreoffice gimp inkscape gcolor2 gpick agave blender shutter
 echo "#-----------------------------------------------------------------------#"
 echo "delete unnecessary whatnot"
 echo "#-----------------------------------------------------------------------#"
