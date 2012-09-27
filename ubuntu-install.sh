@@ -14,6 +14,10 @@ echo "Install Version Control"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install subversion git cvs
 echo "#-----------------------------------------------------------------------#"
+echo "Install Arduino Tools"
+echo "#-----------------------------------------------------------------------#"
+sudo apt-get -y --force-ye install arduino*
+echo "#-----------------------------------------------------------------------#"
 echo "Install Other Applications"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install aptitude exuberant-ctags curl gparted synergy 
