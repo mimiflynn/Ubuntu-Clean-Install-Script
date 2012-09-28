@@ -76,22 +76,10 @@ ruby extconf.rb
 make
 reset
 echo "#-----------------------------------------------------------------------#"
-echo "Create sites directory and clone git repos"
+echo "Create sites directory"
 echo "#-----------------------------------------------------------------------#"
 cd
 mkdir Sites
-cd Sites
-git clone ~/Dropbox/git/wordpress.git/
-git clone ~/Dropbox/git/ad7-mf.git/
-git clone ~/Dropbox/git/ruby.git/
-git clone ~/Dropbox/git/single-page.git/
-git clone ~/Dropbox/git/black-monolith.git/
-cd /var/www
-sudo ln -s ~/Sites/wordpress
-sudo ln -s ~/Sites/ad7-mf
-sudo ln -s ~/Sites/ruby
-sudo ln -s ~/Sites/single-page
-sudo ln -s ~/Sites/black-monolith
 echo "#-----------------------------------------------------------------------#"
 echo "install git-ftp"
 echo "#-----------------------------------------------------------------------#"
