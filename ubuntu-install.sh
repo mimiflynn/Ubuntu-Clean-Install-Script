@@ -36,9 +36,9 @@ echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install libgmp3-dev freeglut3 freeglut3-dev
 sudo apt-get -y --force-yes install ghc-ghci
 echo "#-----------------------------------------------------------------------#"
-echo "Install Applications that usually aren't found"
+echo "Install Utilities for Development"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install filezilla emma wireshark tshark chromium-browser compizconfig-settings-manager
+sudo apt-get -y --force-yes install filezilla emma wireshark tshark chromium-browser compizconfig-settings-manager diffuse
 sudo apt-get -y --force-yes install php-pear
 sudo pear upgrade
 sudo pear channel-discover pear.drush.org
@@ -53,8 +53,9 @@ sudo add-apt-repository ppa:indicator-multiload/stable-daily
 sudo add-apt-repository ppa:atareao/atareao
 sudo add-apt-repository ppa:skype-wrapper/ppa
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+sudo add-apt-repository ppa:neversfelde/ppa
 sudo apt-get update
-sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper ubuntu-restricted-extras y-ppa-manager
+sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper ubuntu-restricted-extras y-ppa-manager minitube
 echo "#-----------------------------------------------------------------------#"
 echo "Mactel Support PPA"
 echo "#-----------------------------------------------------------------------#"
@@ -69,7 +70,7 @@ git clone git://github.com/mimiflynn/Ubuntu-.vim-for-development.git .vim
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 cd .vim
-vim -c 'so %' -c 'q' command-t-1.2.1.vba &
+vim -c 'so %' -c 'q' command-t-1.4.vba &
 sleep 10
 cd ruby/command-t
 ruby extconf.rb
@@ -89,7 +90,7 @@ git checkout master
 sudo make install
 
 sudo add-apt-repository ppa:resmo/git-ftp
-sudo aptitude update
+sudo apt-get update
 sudo apt-get install git-ftp
 echo "#-----------------------------------------------------------------------#"
 echo "office and graphics suites"
