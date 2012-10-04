@@ -45,6 +45,10 @@ sudo pear channel-discover pear.drush.org
 sudo pear install drush/drush
 sudo drush
 echo "#-----------------------------------------------------------------------#"
+echo "Install Encryption Tools"
+echo "#-----------------------------------------------------------------------#"
+sudo apt-get -y --force-yes install encfs
+echo "#-----------------------------------------------------------------------#"
 echo "Utilities for Daily Life"
 echo "#-----------------------------------------------------------------------#"
 sudo add-apt-repository ppa:myunity/ppa
