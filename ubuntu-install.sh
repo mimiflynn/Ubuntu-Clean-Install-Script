@@ -45,6 +45,10 @@ sudo pear channel-discover pear.drush.org
 sudo pear install drush/drush
 sudo drush
 echo "#-----------------------------------------------------------------------#"
+echo "Install Encryption and Password Tools"
+echo "#-----------------------------------------------------------------------#"
+sudo apt-get -y --force-yes install encfs keepassx
+echo "#-----------------------------------------------------------------------#"
 echo "Utilities for Daily Life"
 echo "#-----------------------------------------------------------------------#"
 sudo add-apt-repository ppa:myunity/ppa
@@ -55,7 +59,7 @@ sudo add-apt-repository ppa:skype-wrapper/ppa
 sudo add-apt-repository ppa:webupd8team/y-ppa-manager
 sudo add-apt-repository ppa:neversfelde/ppa
 sudo apt-get update
-sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper ubuntu-restricted-extras y-ppa-manager minitube
+sudo apt-get -y install myunity indicator-weather indicator-multiload my-weather-indicator skype-wrapper ubuntu-restricted-extras y-ppa-manager minitube pidgin
 echo "#-----------------------------------------------------------------------#"
 echo "Mactel Support PPA"
 echo "#-----------------------------------------------------------------------#"
