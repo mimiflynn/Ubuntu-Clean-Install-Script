@@ -38,7 +38,7 @@ sudo apt-get -y --force-yes install ghc-ghci
 echo "#-----------------------------------------------------------------------#"
 echo "Install Utilities for Development"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install filezilla emma wireshark tshark chromium-browser compizconfig-settings-manager diffuse
+sudo apt-get -y --force-yes install filezilla emma wireshark tshark chromium-browser compizconfig-settings-manager diffuse p7zip
 sudo apt-get -y --force-yes install php-pear
 sudo pear upgrade
 sudo pear channel-discover pear.drush.org
@@ -84,11 +84,6 @@ mkdir Sites
 echo "#-----------------------------------------------------------------------#"
 echo "install git-ftp"
 echo "#-----------------------------------------------------------------------#"
-cd git clone https://github.com/resmo/git-ftp.git
-cd git-ftp
-git checkout master
-sudo make install
-
 sudo add-apt-repository ppa:resmo/git-ftp
 sudo apt-get update
 sudo apt-get install git-ftp
