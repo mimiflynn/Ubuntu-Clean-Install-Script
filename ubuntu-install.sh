@@ -48,7 +48,7 @@ echo "#-----------------------------------------------------------------------#"
 echo "Utilities for Daily Life"
 echo "#-----------------------------------------------------------------------#"
 sudo add-apt-repository ppa:myunity/ppa
-sudo add-apt-repository ppa:weather-indicator/ppa
+sudo add-apt-repository ppa:weather-indicator-team/ppa
 sudo add-apt-repository ppa:indicator-multiload/stable-daily
 sudo add-apt-repository ppa:atareao/atareao
 sudo add-apt-repository ppa:skype-wrapper/ppa
