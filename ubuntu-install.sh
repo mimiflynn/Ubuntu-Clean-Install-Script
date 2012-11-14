@@ -5,7 +5,7 @@ sudo apt-get update
 echo "#-----------------------------------------------------------------------#"
 echo "Install Web Services"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install lamp-server^ php5-gd openssh-server vsftpd lynx nodejs
+sudo apt-get -y --force-yes install lamp-server^ php5-gd openssh-server vsftpd lynx node
 sudo a2enmod rewrite
 sudo pecl install uploadprogress
 sudo service apache2 restart
