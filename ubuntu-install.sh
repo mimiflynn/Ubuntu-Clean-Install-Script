@@ -5,7 +5,7 @@ sudo apt-get update
 echo "#-----------------------------------------------------------------------#"
 echo "Install Web Services"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install lamp-server^ php5-gd openssh-server vsftpd lynx node
+sudo apt-get -y --force-yes install lamp-server^ php5-gd openssh-server vsftpd lynx nodejs
 sudo a2enmod rewrite
 sudo pecl install uploadprogress
 sudo service apache2 restart
@@ -26,9 +26,11 @@ echo "Install Python3 and Django with Apache and MySQL modules and SQLite3"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install python3 libapache2-mod-python python-mysqldb python-django sqlite3 python-gtkmvc python-gtkmvc-doc bpython
 echo "#-----------------------------------------------------------------------#"
-echo "Install Ruby and Rails"
+echo "Install Ruby, Rails, Compass, Sass"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install ruby rubygems rails
+sudo gem update --system
+sudo gem install compass
 sudo gem install mysql2
 echo "#-----------------------------------------------------------------------#"
 echo "Install Haskell with dependencies"
