@@ -46,6 +46,7 @@ sudo npm install -g jugglingdb
 sudo npm install -g coffee-script
 sudo npm install -g mocha
 sudo npm install -g grunt
+sudo npm install -g js2coffee
 echo "#-----------------------------------------------------------------------#"
 echo "Install Haskell with dependencies"
 echo "#-----------------------------------------------------------------------#"
