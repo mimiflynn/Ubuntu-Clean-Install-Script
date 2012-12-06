@@ -33,6 +33,20 @@ sudo gem update --system
 sudo gem install compass
 sudo gem install mysql2
 echo "#-----------------------------------------------------------------------#"
+echo "NodeJS frameworks"
+echo "#-----------------------------------------------------------------------#"
+sudo npm install -g railway
+sudo npm install -g tower
+sudo npm install -g flatiron
+echo "#-----------------------------------------------------------------------#"
+echo "NodeJS tools"
+echo "#-----------------------------------------------------------------------#"
+sudo npm install -g markdown
+sudo npm install -g jugglingdb
+sudo npm install -g coffee-script
+sudo npm install -g mocha
+sudo npm install -g grunt
+echo "#-----------------------------------------------------------------------#"
 echo "Install Haskell with dependencies"
 echo "#-----------------------------------------------------------------------#"
 sudo apt-get -y --force-yes install libgmp3-dev freeglut3 freeglut3-dev
