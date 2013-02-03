@@ -24,7 +24,7 @@ sudo apt-get -y --force-yes install aptitude exuberant-ctags curl gparted synerg
 echo "#-----------------------------------------------------------------------#"
 echo "Install Python3 and Django with Apache and MySQL modules and SQLite3"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install python3 libapache2-mod-python python-mysqldb python-django sqlite3 python-gtkmvc python-gtkmvc-doc bpython
+sudo apt-get -y --force-yes install python3 libapache2-mod-python python-mysqldb python-django python-pip sqlite3 python-gtkmvc python-gtkmvc-doc bpython
 echo "#-----------------------------------------------------------------------#"
 echo "Install Ruby, Rails, Compass, Sass"
 echo "#-----------------------------------------------------------------------#"
