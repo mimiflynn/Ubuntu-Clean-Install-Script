@@ -91,6 +91,7 @@ git clone git://github.com/mimiflynn/Ubuntu-.vim-for-development.git .vim
 ln -s .vim/vimrc .vimrc
 ln -s .vim/gvimrc .gvimrc
 cd .vim
+wget http://www.vim.org/scripts/download_script.php?src_id=18167 command-t-1.4.vba
 vim -c 'so %' -c 'q' command-t-1.4.vba &
 sleep 10
 cd ruby/command-t
