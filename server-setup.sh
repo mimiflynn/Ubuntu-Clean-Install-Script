@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "#-----------------------------------------------------------------------#"
 echo "Install pretty bash prompt"
 echo "#-----------------------------------------------------------------------#"
@@ -8,6 +10,7 @@ source .bash_profile
 echo "#-----------------------------------------------------------------------#"
 echo "Update apt-get"
 echo "#-----------------------------------------------------------------------#"
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get update
 echo "#-----------------------------------------------------------------------#"
 echo "Install LEMP Stack"
@@ -21,7 +24,6 @@ sudo mysql_secure_installation
 echo "#-----------------------------------------------------------------------#"
 echo "Install NodeJS"
 echo "#-----------------------------------------------------------------------#"
-curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 echo "#-----------------------------------------------------------------------#"
 echo "Cleanup apt-get"
