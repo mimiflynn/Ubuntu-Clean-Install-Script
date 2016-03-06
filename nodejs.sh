@@ -1,31 +1,18 @@
+#!/bin/bash
 echo "#-----------------------------------------------------------------------#"
-echo "update aptitude"
+echo "Add NodeJS PPA"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get update
+curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 echo "#-----------------------------------------------------------------------#"
 echo "Install nodejs"
 echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install nodejs
-echo "#-----------------------------------------------------------------------#"
-echo "Install SQLite3"
-echo "#-----------------------------------------------------------------------#"
-sudo apt-get -y --force-yes install sqlite3
+sudo apt-get -y install nodejs
 echo "#-----------------------------------------------------------------------#"
 echo "NodeJS application frameworks"
 echo "#-----------------------------------------------------------------------#"
-sudo npm install -g compound
-sudo npm install -g tower
-sudo npm install -g flatiron
 sudo npm install -g wintersmith
-echo "#-----------------------------------------------------------------------#"
-echo "NodeJS tools"
-echo "#-----------------------------------------------------------------------#"
-sudo npm install -g markdown
-sudo npm install -g jugglingdb
-sudo npm install -g coffee-script
-sudo npm install -g mocha
 sudo npm install -g grunt
-sudo npm install -g js2coffee
+sudo npm install -g express
 echo "#-----------------------------------------------------------------------#"
 echo "WIN!"
 echo "#-----------------------------------------------------------------------#"
